@@ -21,6 +21,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&amp;family=Rubik:wght@600&amp;display=swap" rel="stylesheet">
     <title>Beecore – Kärnan i din säljorganisation</title>
+    <style>
+        #scrollToTopBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #FFD54F;
+            color: #242424;
+            cursor: pointer;
+            padding: 12px;
+            border-radius: 50%;
+            font-size: 25px;
+            transition: opacity 0.3s;
+            width: 50px;
+            height: auto;
+        }
+        
+        #scrollToTopBtn:hover {
+            background-color: #FFD54F;
+        }
+    </style>
 </head>
 
 <body data-lqd-cc="true" data-mobile-nav-breakpoint="1199" data-mobile-nav-style="minimal" data-mobile-nav-scheme="gray" data-mobile-nav-trigger-alignment="right" data-mobile-header-scheme="light" data-mobile-logo-alignment="default" data-overlay-onmobile="false"
@@ -1706,7 +1731,28 @@
                 <div class="lqd-modal-foot"></div>
             </div>
         </div>
+        <button id="scrollToTopBtn" title="Go to top">↑</button>
+        <script>
+            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            const rootElement = document.documentElement;
 
+            // Show button when user scrolls down 200px
+            window.addEventListener("scroll", () => {
+                if (window.pageYOffset > 200) {
+                    scrollToTopBtn.style.display = "block";
+                } else {
+                    scrollToTopBtn.style.display = "none";
+                }
+            });
+
+            // Smooth scroll to top when clicked
+            scrollToTopBtn.addEventListener("click", () => {
+                rootElement.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        </script>
         <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
         <script src="assets/vendors/jquery.min.js"></script>
         <script src="assets/vendors/jquery-ui/jquery-ui.min.js"></script>
