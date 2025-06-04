@@ -10950,14 +10950,17 @@
 }
 
 @media (max-width:575px) {
+    .contact_section.px-70 {
+        padding: 0px;
+    }
     .ld-fancy-heading.relative .text-50 {
         font-size: 40px;
     }
     span.banner_heading {
-        font-size: 32px;
+        font-size: 40px;
     }
     span.gradient-word {
-        font-size: 42px;
+        font-size: 54px;
     }
     .xs\:w-full {
         width: 100%
