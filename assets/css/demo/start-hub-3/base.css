@@ -1,8 +1,8 @@
 /* ***** Global ***** */
 
 @font-face {
-    font-family: "Blackcrow Bold";
-    src: url('/assets/fonts/black-crow/Blackcrow\ Bold.otf') format("truetype");
+    font-family: "KumbhSans-ExtraBold";
+    src: url('/assets/fonts/KumbhSans-ExtraBold.ttf') format("truetype");
 }
 
 @font-face {
@@ -63,7 +63,7 @@
     --lqd-color-yellow-100: #EDEBE2;
     --lqd-color-yellow-500: #c59801;
     --lqd-body-text-color: #737588;
-    --lqd-text-font-family: 'Blackcrow SemiBold', sans-serif;
+    --lqd-text-font-family: 'KumbhSans-ExtraBold', sans-serif;
     --lqd-text-font-size: 16px;
     --lqd-accent-font-family: var(--lqd-text-font-family);
     --lqd-accent-font-size: 16px;
