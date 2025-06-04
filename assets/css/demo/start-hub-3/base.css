@@ -6,6 +6,11 @@
 }
 
 @font-face {
+    font-family: "Blackcrow SemiBold";
+    src: url('/assets/fonts/black-crow/Blackcrow\ SemiBold.otf') format("truetype");
+}
+
+@font-face {
     font-family: "Kanit-Medium";
     src: url('/assets/fonts/Kanit-Medium.ttf') format("truetype");
 }
@@ -46,7 +51,7 @@
     --lqd-color-slate-200: rgba(128, 130, 145, 0.77);
     --lqd-color-slate-300: #b4b6c6;
     --lqd-color-slate-400: #4B6E84;
-    --lqd-color-slate-600: #225469;
+    --lqd-color-slate-600: #242424;
     --lqd-color-orange-100: #F0EBE7;
     --lqd-color-pink-100: #FFD3D3;
     --lqd-color-purple-200: #F0EBFF;
@@ -58,7 +63,7 @@
     --lqd-color-yellow-100: #EDEBE2;
     --lqd-color-yellow-500: #c59801;
     --lqd-body-text-color: #737588;
-    --lqd-text-font-family: 'Blackcrow Bold', sans-serif;
+    --lqd-text-font-family: 'Blackcrow SemiBold', sans-serif;
     --lqd-text-font-size: 16px;
     --lqd-accent-font-family: var(--lqd-text-font-family);
     --lqd-accent-font-size: 16px;
