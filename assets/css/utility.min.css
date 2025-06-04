@@ -10958,9 +10958,11 @@
     }
     span.banner_heading {
         font-size: 32px;
+        line-height: 20px;
     }
     span.gradient-word {
         font-size: 42px;
+        line-height: 20px;
     }
     .xs\:w-full {
         width: 100%
